@@ -2,6 +2,7 @@ package com.example.demo;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -10,6 +11,9 @@ public class PredictionService {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Value("${flask.api.url:http://localhost:5000}")
+    private String flaskApiUrl;
 
 
     // Average Values
