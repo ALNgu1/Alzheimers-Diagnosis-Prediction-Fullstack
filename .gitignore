@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+
+# Node.js
+node_modules/
+frontend/build/ 
+/dist
+
+# Java
+target/
+*.jar
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML
+.ipynb_checkpoints/
