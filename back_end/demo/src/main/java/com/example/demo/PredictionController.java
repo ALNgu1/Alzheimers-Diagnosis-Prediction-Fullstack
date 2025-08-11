@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"http://my-react-app-bucket-alzpred124.s3-website-us-east-1.amazonaws.com/", "http://localhost:3000"})
 public class PredictionController {
 
     @Autowired
